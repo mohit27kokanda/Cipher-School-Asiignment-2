@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <div class="header">
+        <h2><strong>Bakers No 1</strong></h2>
+    </div>
+
+    <div class="bgrp">
+        <button onclick=ShowAll()>ALL</button>
+        <button onclick=ShowCake()>CAKES</button>
+        <button onclick=ShowCupCake()>CUPECAKES</button>
+        <button onclick=ShowSweet()>SWEETS</button>
+        <button onclick=ShowDoughnut()>DOUGHNUTS</button>
+    </div>
+
+    <div class="search-box">
+        <button id="myBtn" type="submit"><i class="fa fa-search" onclick="Searchfn()"></i></button>
+        <input type="text" placeholder="Search Items"  id="search" style="padding: 5px; font-size: 15px;border: 1.5px solid lightgray;float:right;width: 90%;">
+    </div>
+     
+    <div class="tiles">
+        <div class="card">
+            <img id="img1" src="sweet1.jpg"  style="max-width:100%" onclick="ShowSweet()">
+            <h1 id="item1" class="itemName">Sweets</h1>
+            <p class="price"><b>Rs.299</b></p>
+        </div>
+        <div class="card">
+            <img id="img2" src="cupcake1.jpg" style="width:100%" onclick="ShowCupCake()">
+            <h1 id="item2" class="itemName">Cupcakes</h1>
+            <p class="price"><b>Rs.399</b></p>
+        </div>
+        <div class="card">
+            <img id="img3" src="cake1.jpg" style="width:100%" onclick="ShowCake()">
+            <div class="itemDetail">
+               <h1 id="item3" class="itemName">Cakes</h1>
+               <p class="price"><b>Rs.149</b></p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="img4" src="doughnut1.jpg" style="width:100%" onclick="ShowDoughnut()">
+            <div class="itemDetail">
+               <h1 id="item4" class="itemName">Doughnuts</h1>
+               <p class="price"><b>Rs.249</b></p>
+            </div>
+        </div>
+    </div>
+    <script src="jscript.js"></script>
+</body>
+</html>

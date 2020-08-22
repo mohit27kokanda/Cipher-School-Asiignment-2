@@ -1,0 +1,43 @@
+.header{
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 28px;
+  font-weight: 100;
+}
+.bgrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 20px;
+  }
+.search-box{
+  margin:0 auto;
+  max-width:450px;
+  }
+.tiles{
+    width:100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+.card{
+    max-width: 300px;
+    border: 1px solid grey;
+  }
+
+.itemName{
+  padding: 10px 15px;
+  font-size: 22px;
+  float: left; 
+  font-weight: 400; 
+}
+
+.price {
+  padding: 10px 15px;
+  float: right;
+  font-size: 22px;
+}
